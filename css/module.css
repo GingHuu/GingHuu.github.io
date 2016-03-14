@@ -1,0 +1,92 @@
+﻿.m-team{
+	padding:50px 0;
+	box-sizing: border-box;
+}
+.m-team li{
+	float:left;
+	width:200px;
+}
+.m-team li a{
+	display: block;
+    width: 200px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;	
+}
+.m-team li a img{
+	vertical-align: middle;
+}
+.m-team li a .name{
+	color: #fff;
+    position: absolute;
+    top: 25px;
+    width: 100%;
+    font-size: 14px;
+    z-index: 2;
+    display: none
+}
+.m-team li a p {
+    color: #fff;
+    position: absolute;
+    top: 90px;
+    padding: 0 30px;
+    font-size: 12px;
+    z-index: 2;
+    display: none
+}
+.m-team li a b {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    right: 0;
+    left: 0;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    background: #000;
+    -webkit-transition: all .2s ease-out .1s;
+    transition: all .2s ease-out .1s;
+    z-index: 1;
+}
+.m-team li a:hover b {
+    top: 0;
+    bottom: 0;
+}
+.m-team li a:hover p {
+    display: block;
+}
+
+.m-box{
+	position: relative;
+	background-color:#6FCFC9;
+	margin-top: 110px;
+	padding-bottom: 30px;
+}
+.m-box .img_pic{
+	text-align: center;
+}
+.m-box .img_pic img{
+	border-radius: 50%;
+	border: 10px solid #6FCFC9;
+	margin-top: -110px;
+}
+.m-box h2{
+	font-size:20px;
+	text-align:center;
+	color:#fff;
+	padding: 30px 0;
+}
+.m-box p{
+	margin:0 auto;
+	width:400px;
+	font-size:16px;
+	line-height:25px;
+	color:#fff;
+}
+
+.fily:hover{
+	animation: myfirst 2s;
+}
+@keyframes myfirst
+{
+	from {transform: rotateY(360deg);}
+}
